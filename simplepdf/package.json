@@ -1,0 +1,23 @@
+{
+  "name": "simplepdf",
+  "version": "0.2.0",
+  "description": "SimplePDF - PDF page manager and editor",
+  "author": "Ariff",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "my.simplepdf.app",
+    "productName": "SimplePDF",
+    "files": ["main.js", "src/**/*"],
+    "win": { "target": "nsis" }
+  }
+}
